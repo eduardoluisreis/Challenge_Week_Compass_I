@@ -1,24 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700;900&display=swap");
 
 body {
-  background-color: #2e0249;
-
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+  background-color: #2e0249;
+  margin: 0;
+  padding: 0;
 }
 
 main {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 64px;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 1.5rem 7rem 2.5rem 4rem;
+  height: 90vh;
+  font-size: 1.20rem;
 }
 
 main section {
-  width: 50%;
+  width: 30rem;
+  height: 15rem;
+  margin-left: 0.5rem;
 }
 
 main section.presentation h1 {
@@ -26,26 +29,26 @@ main section.presentation h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 3rem;
-  line-height: 72px;
+  line-height: 4.5rem;
   color: #eeeeee;
 }
 
-main section.presentation h1 span {
+.title span {
   color: #a91079;
 }
 
 main section.presentation ul.details {
-  margin-top: 81px;
-  width: 451px;
+  /* margin-top: 5.06rem; */
+  width: 28.19rem;
 }
 
 main section.presentation ul.details li {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
-  padding: 24px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
   border: 3px solid #2e0249;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 main section.presentation ul.details li:hover {
@@ -56,133 +59,194 @@ main section.presentation ul.details li:hover {
 
 main section.presentation ul.details li a,
 main section.presentation ul.details li span {
-  margin-left: 16px;
+  margin-left: 1rem;
   color: #fff;
   text-decoration: none;
   font-weight: 400;
-  font-size: 20px;
 }
 
 main section.presentation ul.details li img {
-  max-width: 20px;
+  max-width: 1.25rem;
 }
+
 
 main section.presentation ul.social {
   display: flex;
   flex-direction: row;
   position: relative;
-  top: 8rem;
+  top: 4rem;
+  width: 11rem;
+  height: 3.5rem;
   align-items: center;
-  margin-top: 81px;
-  width: 50vw;
-  padding: 1rem;
 }
 
 main section.presentation ul.social li {
   padding: 1rem;
 }
 
-main .form {
+main section.presentation ul.social li:hover {
+  background-color: rgba(169, 16, 121, 0.5);
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+
+main section.presentation ul.social li img {
+  max-width: 1.40rem;
+}
+
+
+main .form1 {
   background: #eeeeee;
-  width: 700px;
-  height: 896px;
-  border-radius: 24px;
+  width: 24rem;
+  margin-right: -7.5rem;
+  margin-left: 9rem;
+  margin-top: 1rem;
+  height: 81vh;
+  border-radius: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  padding: 48px;
+  /* font-size: 1.13rem; */
+  padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
-main .form p {
+main .form1 p {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  line-height: 1.88rem;
   color: #2e0249;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
-main .form ul {
+main.form1 .list-interest {
+  width: 25rem;
+}
+
+main .form1 ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   align-items: center;
 }
 
-main .form ul li {
-  margin-right: 16px;
-  margin-bottom: 16px;
+main .form1 ul li {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
-main .form ul li button {
-  width: 12em;
-  height: 62px;
-  padding: 1rem;
+main .form1 ul li button {
+  padding: 0.6rem;
   border-radius: 8px;
   border: 2px solid rgba(46, 2, 73, 0.3);
   color: rgba(46, 2, 73, 0.3);
   cursor: pointer;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
 }
 
-main .form ul li button:hover {
+main .form1 ul li button:hover {
   background: #a91079;
   color: #fff;
   border-color: #a91079;
   transform: 0.3s;
 }
 
-main .form .form-user {
-  margin-top: 64px;
+main .form1 .form-user {
+  margin-top: 0.5rem;
   display: flex;
+  height: 13rem;
   flex-direction: column;
-  width: 600px;
+  width: 24rem;
 }
 
-main .form .form-user input:not(:last-child) {
-  margin-bottom: 64px;
+main .form1 .form-user input:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
-main .form .form-user input {
-  margin-bottom: 64px;
+main .form1 .form-user input {
+  margin-bottom: 4rem;
   border: none;
   border-bottom: 3px solid rgba(46, 2, 73, 0.3);
   background: inherit;
-  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  line-height: 1.88rem;
   color: #2e0249;
 }
 
-main .form .form-user input:focus-visible {
+main .form1 .form-user input:focus-visible {
   outline: none;
   border-color: #a91079;
 }
 
-main .form .form-user input::placeholder {
+main .form1 .form-user input::placeholder {
   color: rgba(46, 2, 73, 0.3);
 }
 
-.send {
-  display: flex;
-  flex-direction: row;
-  padding: 24px 64px 24px 64px;
-  align-items: center;
-  gap: 16px;
-  /* position: absolute; */
-  width: 315px;
-  height: 78px;
-  left: 48px;
-  top: 770px;
-  background-color: #a91079;
-  border-radius: 16px;
+.sendButton {
+  padding: 1rem;
+  margin-top: 10rem;
+  width: 16rem;
+  height: 4rem;
+  position: relative;
+  background-color: #a098ba;
+  border-radius: 1rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
   color: #fff;
+}
+
+
+#sendButton {
+  background-color: #a91079;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+#sendButton:disabled {
+  background-color: #d5cfde;
+  color: #989797;
+  cursor: not-allowed;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+/* Responsividade para dispositivos com largura menor ou igual a 768px */
+@media (max-width: 768px) {
+  .presentation {
+    text-align: center;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
+
+  .form1 {
+    text-align: center;
+  }
+}
+
+/* Responsividade para dispositivos com largura menor ou igual a 480px */
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .details {
+    font-size: 14px;
+  }
+
+  .list-interest li {
+    width: 100%;
+  }
+
+  .form-user input {
+    width: 100%;
+  }
 }
