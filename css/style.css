@@ -38,7 +38,6 @@ main section.presentation h1 {
 }
 
 main section.presentation ul.details {
-  /* margin-top: 5.06rem; */
   width: 28.19rem;
 }
 
@@ -97,8 +96,8 @@ main section.presentation ul.social li img {
 
 main .form1 {
   background: #eeeeee;
-  width: 24rem;
-  margin-right: -7.5rem;
+  width: 33rem;
+  margin-right: -5.5rem;
   margin-left: 9rem;
   margin-top: 1rem;
   height: 81vh;
@@ -106,7 +105,6 @@ main .form1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  /* font-size: 1.13rem; */
   padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
@@ -117,22 +115,19 @@ main .form1 p {
   margin-bottom: 1.5rem;
 }
 
-main.form1 .list-interest {
-  width: 25rem;
-}
-
-main .form1 ul {
+main section.form1 ul.list-interest {
   display: flex;
   flex-flow: wrap;
   align-items: center;
 }
 
-main .form1 ul li {
+main section.form1 ul.list-interest li {
   margin-right: 1rem;
   margin-bottom: 1rem;
+
 }
 
-main .form1 ul li button {
+main section.form1 ul.list-interest li button {
   padding: 0.6rem;
   border-radius: 8px;
   border: 2px solid rgba(46, 2, 73, 0.3);
@@ -141,7 +136,7 @@ main .form1 ul li button {
   font-weight: 500;
 }
 
-main .form1 ul li button:hover {
+main section.form1 ul.list-interest li button:hover {
   background: #a91079;
   color: #fff;
   border-color: #a91079;
@@ -156,6 +151,12 @@ main .form1 .form-user {
   width: 24rem;
 }
 
+main .form1 .form-user input {
+  margin-top: 0.8rem;
+  width: 37em;
+  padding: 1rem;
+}
+
 main .form1 .form-user input:not(:last-child) {
   margin-bottom: 0.5rem;
 }
@@ -163,7 +164,7 @@ main .form1 .form-user input:not(:last-child) {
 main .form1 .form-user input {
   margin-bottom: 4rem;
   border: none;
-  border-bottom: 3px solid rgba(46, 2, 73, 0.3);
+  border-bottom: 2px solid rgba(46, 2, 73, 0.3);
   background: inherit;
   padding-bottom: 0.5rem;
   font-family: "Poppins";
@@ -183,11 +184,14 @@ main .form1 .form-user input::placeholder {
 }
 
 .sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
-  margin-top: 10rem;
+  top: 35rem;
   width: 16rem;
   height: 4rem;
-  position: relative;
+  position: absolute;
   background-color: #a098ba;
   border-radius: 1rem;
   font-family: "Poppins", sans-serif;
@@ -213,7 +217,57 @@ main .form1 .form-user input::placeholder {
   margin-right: 1rem;
 }
 
-/* Responsividade para dispositivos com largura menor ou igual a 768px */
+
+div.radio-input {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-weight: 500;
+  width: 28em;
+}
+
+.radio-input input[type="checkbox"] {
+  display: none;
+}
+
+.radio-input label {
+  display: flex;
+  /* flex-grow: 1; */
+  align-items: center;
+  padding: 0.7rem;
+  /* width: 4em; */
+  border: 1px solid #ccc;
+  background-color: #d5cfde;
+  color: #989797;
+  border-radius: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+}
+
+
+.radio-input input[type="checkbox"]:checked+label {
+  background-color: #a91079;
+  color: #eeeeee;
+  animation: radio-translate 0.5s ease-in-out;
+}
+
+@keyframes radio-translate {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 768px) {
   .presentation {
     text-align: center;
@@ -232,7 +286,6 @@ main .form1 .form-user input::placeholder {
   }
 }
 
-/* Responsividade para dispositivos com largura menor ou igual a 480px */
 @media (max-width: 480px) {
   .title {
     font-size: 24px;
