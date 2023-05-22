@@ -55,36 +55,38 @@
 
     <section class="form1">
       <p>I'm interested in...</p>
-
-      <ul class="list-interest">
-        <li>
-          <button class="interest" type="button">UI/UX design</button>
-        </li>
-        <li>
-          <button class="interest" type="button">Web design</button>
-        </li>
-        <li>
-          <button class="interest" type="button">Graphic design</button>
-        </li>
-        <li>
-          <button class="interest" type="button">Design system</button>
-        </li>
-        <li>
-          <button class="interest" type="button">Other</button>
-        </li>
-      </ul>
-
       <form class="form-user">
+
+        <div class="radio-input">
+
+          <input type="checkbox" id="value-1" name="value-radio" value="UI/UX design">
+          <label for="value-1">UI/UX design</label>
+
+          <input type="checkbox" id="value-2" name="value-radio" value="Web design">
+          <label for="value-2">Web design</label>
+
+          <input type="checkbox" id="value-3" name="value-radio" value="Graphic design">
+          <label for="value-3">Graphic design</label>
+
+          <input type="checkbox" id="value-4" name="value-radio" value="Design system">
+          <label for="value-4">Design system</label>
+
+          <input type="checkbox" id="value-5" name="value-radio" value="Other">
+          <label for="value-5">Other</label>
+
+        </div>
+
         <input type="text" placeholder="Your name" name="userName" id="userName" />
         <input type="text" placeholder="Your email" name="userEmail" id="userEmail" />
         <input type="text" placeholder="Your message" name="message" id="message" />
-        
-        <button class="sendButton" type="submit" onsubmit="" disabled="disabled" id="sendButton"><span class="icon"><img src="assets/img/Send.png" alt=""></span>Send Message</button>
+
+        <button class="sendButton" type="submit" onsubmit="" disabled="disabled" id="sendButton"><span class="icon"><img
+              src="assets/img/Send.png" alt=""></span>Send Message</button>
         <a href="storage.html"></a>
       </form>
     </section>
   </main>
-  <script src="js/index2.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
