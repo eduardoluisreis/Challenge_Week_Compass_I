@@ -52,7 +52,7 @@ document.querySelector("form").addEventListener("input", function () {
 
 	this.addEventListener("submit", function (event) {
 		event.preventDefault();
-		window.location.href = "/storage.html";
+		window.location.href = "./storage.html";
 	});
 	console.log(interest);
 });
